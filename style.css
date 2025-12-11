@@ -1,0 +1,118 @@
+:root {
+    --primary: #2c3e50;
+    --accent: #3498db;
+    --light: #ecf0f1;
+    --text: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: var(--primary);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 { margin: 0; font-size: 2.5em; }
+.hero h2 { margin: 10px 0; font-weight: 300; color: var(--accent); }
+.hero p { max-width: 600px; margin: 20px auto; opacity: 0.9; }
+
+.contact-info span {
+    margin: 0 10px;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+.social-links { margin-top: 20px; }
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 16px;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+.social-links a:hover { background: var(--accent); }
+
+/* Main Content */
+.main-content { padding: 40px 20px; }
+.section { margin-bottom: 50px; }
+
+.section-title {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 10px;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.skill-card h4 { margin-top: 0; color: var(--accent); }
+
+/* Timeline (Experience & Education) */
+.timeline-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--accent);
+}
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.timeline-header h4 { margin: 0; }
+.date { font-size: 0.9em; color: #777; }
+.company { font-weight: bold; color: #555; margin-bottom: 10px; }
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.project-card h4 { margin-top: 0; margin-bottom: 5px; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary);
+    color: white;
+    font-size: 0.9em;
+}
